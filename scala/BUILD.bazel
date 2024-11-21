@@ -8,6 +8,7 @@ go_library(
         "parser.h",
         "scanner.c",
         "stack.h",
+        "//:common_libs",
     ],
     cgo = True,
     importpath = "github.com/smacker/go-tree-sitter/scala",

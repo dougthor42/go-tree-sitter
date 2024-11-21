@@ -4,6 +4,16 @@ load("@gazelle//:def.bzl", "gazelle")
 # gazelle:prefix github.com/smacker/go-tree-sitter
 gazelle(name = "gazelle")
 
+filegroup(
+    name = "common_libs",
+    srcs = [
+        "alloc.h",
+        "api.h",
+        "array.h",
+    ],
+    visibility = [":__subpackages__"],
+)
+
 go_library(
     name = "go-tree-sitter",
     srcs = [
