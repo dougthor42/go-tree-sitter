@@ -1,0 +1,4 @@
+load("@gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/smacker/go-tree-sitter
+gazelle(name = "gazelle")
