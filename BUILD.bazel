@@ -4,6 +4,11 @@ load("@gazelle//:def.bzl", "gazelle")
 # gazelle:prefix github.com/smacker/go-tree-sitter
 gazelle(name = "gazelle")
 
+exports_files([
+    "go.mod",
+    "go.sum",
+])
+
 filegroup(
     name = "common_libs",
     srcs = [
