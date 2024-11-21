@@ -1,0 +1,30 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "svelte",
+    srcs = [
+        "allocator.h",
+        "binding.go",
+        "ekstring.h",
+        "parser.c",
+        "parser.h",
+        "scanner.c",
+        "tag.h",
+        "uthash.h",
+        "vc_vector.h",
+    ],
+    cgo = True,
+    importpath = "github.com/smacker/go-tree-sitter/svelte",
+    visibility = ["//visibility:public"],
+    deps = ["//:go-tree-sitter"],
+)
+
+go_test(
+    name = "svelte_test",
+    srcs = ["binding_test.go"],
+    deps = [
+        ":svelte",
+        "//:go-tree-sitter",
+        "@com_github_stretchr_testify//assert",
+    ],
+)

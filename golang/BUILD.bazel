@@ -1,0 +1,24 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "golang",
+    srcs = [
+        "binding.go",
+        "parser.c",
+        "parser.h",
+    ],
+    cgo = True,
+    importpath = "github.com/smacker/go-tree-sitter/golang",
+    visibility = ["//visibility:public"],
+    deps = ["//:go-tree-sitter"],
+)
+
+go_test(
+    name = "golang_test",
+    srcs = ["binding_test.go"],
+    deps = [
+        ":golang",
+        "//:go-tree-sitter",
+        "@com_github_stretchr_testify//assert",
+    ],
+)

@@ -1,0 +1,26 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "csharp",
+    srcs = [
+        "binding.go",
+        "parser.c",
+        "parser.h",
+        "scanner.c",
+    ],
+    cgo = True,
+    copts = ["-Wno-trigraphs"],
+    importpath = "github.com/smacker/go-tree-sitter/csharp",
+    visibility = ["//visibility:public"],
+    deps = ["//:go-tree-sitter"],
+)
+
+go_test(
+    name = "csharp_test",
+    srcs = ["binding_test.go"],
+    deps = [
+        ":csharp",
+        "//:go-tree-sitter",
+        "@com_github_stretchr_testify//assert",
+    ],
+)
