@@ -9,7 +9,7 @@ go_library(
         "tree_sitter/parser.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/sql",
+    importpath = "github.com/dougthor42/go-tree-sitter/sql",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

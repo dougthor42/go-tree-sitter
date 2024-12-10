@@ -10,7 +10,7 @@ go_library(
         "//:common_libs",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/css",
+    importpath = "github.com/dougthor42/go-tree-sitter/css",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

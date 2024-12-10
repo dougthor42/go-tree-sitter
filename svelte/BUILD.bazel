@@ -14,7 +14,7 @@ go_library(
         "vc_vector.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/svelte",
+    importpath = "github.com/dougthor42/go-tree-sitter/svelte",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

@@ -1,7 +1,7 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 load("@gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix github.com/smacker/go-tree-sitter
+# gazelle:prefix github.com/dougthor42/go-tree-sitter
 gazelle(name = "gazelle")
 
 exports_files([
@@ -69,7 +69,7 @@ go_library(
         "wasm_store.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter",
+    importpath = "github.com/dougthor42/go-tree-sitter",
     visibility = ["//visibility:public"],
 )
 

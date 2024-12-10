@@ -10,7 +10,7 @@ go_library(
         "scanner.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/typescript/tsx",
+    importpath = "github.com/dougthor42/go-tree-sitter/typescript/tsx",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

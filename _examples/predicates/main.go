@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	sitter "github.com/smacker/go-tree-sitter"
-	"github.com/smacker/go-tree-sitter/javascript"
+	sitter "github.com/dougthor42/go-tree-sitter"
+	"github.com/dougthor42/go-tree-sitter/javascript"
 )
 
 func main() {

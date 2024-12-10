@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 go_library(
     name = "markdown",
     srcs = ["binding.go"],
-    importpath = "github.com/smacker/go-tree-sitter/markdown",
+    importpath = "github.com/dougthor42/go-tree-sitter/markdown",
     visibility = ["//visibility:public"],
     deps = [
         "//:go-tree-sitter",

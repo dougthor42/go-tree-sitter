@@ -8,7 +8,7 @@ go_library(
         "parser.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/golang",
+    importpath = "github.com/dougthor42/go-tree-sitter/golang",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

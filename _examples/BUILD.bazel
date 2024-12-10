@@ -3,7 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "_examples_lib",
     srcs = ["main.go"],
-    importpath = "github.com/smacker/go-tree-sitter/_examples",
+    importpath = "github.com/dougthor42/go-tree-sitter/_examples",
     visibility = ["//visibility:private"],
     deps = [
         "//:go-tree-sitter",

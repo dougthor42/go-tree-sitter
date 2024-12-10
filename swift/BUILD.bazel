@@ -9,7 +9,7 @@ go_library(
         "scanner.c",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/swift",
+    importpath = "github.com/dougthor42/go-tree-sitter/swift",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

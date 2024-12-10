@@ -10,7 +10,7 @@ go_library(
         "//:common_libs",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/kotlin",
+    importpath = "github.com/dougthor42/go-tree-sitter/kotlin",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

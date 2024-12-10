@@ -11,7 +11,7 @@ go_library(
         "//:common_libs",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/scala",
+    importpath = "github.com/dougthor42/go-tree-sitter/scala",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )

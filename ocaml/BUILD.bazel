@@ -11,7 +11,7 @@ go_library(
         "scanner.h",
     ],
     cgo = True,
-    importpath = "github.com/smacker/go-tree-sitter/ocaml",
+    importpath = "github.com/dougthor42/go-tree-sitter/ocaml",
     visibility = ["//visibility:public"],
     deps = ["//:go-tree-sitter"],
 )
