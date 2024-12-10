@@ -1,5 +1,5 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
-load("@gazelle//:def.bzl", "gazelle")
+load("@go_tree_sitter_gazelle//:def.bzl", "gazelle")
 
 # gazelle:prefix github.com/dougthor42/go-tree-sitter
 gazelle(name = "gazelle")
