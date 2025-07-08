@@ -9,11 +9,12 @@ starting with `rules_python` [version 1.1.0][v1.1.0]. See
 [v1.1.0]: https://github.com/bazel-contrib/rules_python/releases/tag/1.1.0
 [pr2496]: https://github.com/bazel-contrib/rules_python/pull/2496
 
-`rules_python_gazelle_plugin` has since moved away from this fork (yay!) and
+`rules_python_gazelle_plugin` has since moved away from this fork in [PR #3069][pr3069] (yay!) and
 thus this repo is no longer needed by recent versions. It's archived so that
 older versions of `rules_python_gazelle_plugin` can still make use of it. This
 change was released in `rules_python` [version 1.6.0][v1.6.0] (tentative).
 
+[pr3069]: https://github.com/bazel-contrib/rules_python/pull/3069
 [v1.6.0]: https://github.com/bazel-contrib/rules_python/releases/tag/1.6.0
 
 This repo will be deleted **no earlier than** 2027-01-01 (18 months from when
