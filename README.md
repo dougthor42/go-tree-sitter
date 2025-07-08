@@ -1,3 +1,26 @@
+# NOTICE
+
+This repo was originally used to address some issues with Bazel and Gazelle
+and to get [`rules_python_gazelle_plugin`][rpgp] to work with Python 3.12 syntax,
+starting with `rules_python` [version 1.1.0][v1.1.0]. See
+[`rules_python` PR #2496][pr2496] for details.
+
+[rpgp]: https://github.com/bazel-contrib/rules_python/tree/main/gazelle
+[v1.1.0]: https://github.com/bazel-contrib/rules_python/releases/tag/1.1.0
+[pr2496]: https://github.com/bazel-contrib/rules_python/pull/2496
+
+`rules_python_gazelle_plugin` has since moved away from this fork (yay!) and
+thus this repo is no longer needed by recent versions. It's archived so that
+older versions of `rules_python_gazelle_plugin` can still make use of it. This
+change was released in `rules_python` [version 1.6.0][v1.6.0] (tentative).
+
+[v1.6.0]: https://github.com/bazel-contrib/rules_python/releases/tag/1.6.0
+
+This repo will be deleted **no earlier than** 2027-01-01 (18 months from when
+`rules_python` was updated to no longer need this fork), at which point verions
+1.1.0 to 1.6.0 of `rules_python_gazelle_plugin` will no longer work.
+
+
 # go tree-sitter
 
 [![Build Status](https://github.com/smacker/go-tree-sitter/workflows/Test/badge.svg?branch=master)](https://github.com/smacker/go-tree-sitter/actions/workflows/test.yml?query=branch%3Amaster)
@@ -46,7 +69,7 @@ fmt.Println(child.EndByte()) // 9
 
 This repository provides grammars for many common languages out of the box.
 
-But if you need support for any other language you can keep it inside your own project or publish it as a separate repository to share with the community. 
+But if you need support for any other language you can keep it inside your own project or publish it as a separate repository to share with the community.
 
 See explanation on how to create a grammar for go-tree-sitter [here](https://github.com/smacker/go-tree-sitter/issues/57).
 
